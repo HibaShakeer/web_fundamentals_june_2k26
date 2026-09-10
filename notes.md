@@ -94,3 +94,24 @@ http_request for deleting  specific employee
 url:localhost:8000/employee/4/
 method:DELETE
 ```
+
+### Movie task
+
+```
+Movie
+
+id      title      year     language        run_time
+
+
+1          kgf1      2008      kannada           160
+2          kgf2      2020      kannada           165
+3          kgf3      2026      kannada           167
+4          kgf4      2028      kannada           168
+5          kgf5      2030      kannada           169
+```
+
+`http_request for adding new movie`
+`http_request for list all movie`
+`http_request for fetching movie detail`
+`http_request for update movie`
+`http_request for delete movie`
