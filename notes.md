@@ -108,10 +108,97 @@ id      title      year     language        run_time
 3          kgf3      2026      kannada           167
 4          kgf4      2028      kannada           168
 5          kgf5      2030      kannada           169
+
 ```
 
 `http_request for adding new movie`
+
+url:localhost:8000/movie/
+method:POST
+body:{
+"title":"kgf",
+"year":2026,
+"language":"malayalam",
+"run_time":167
+}
+
 `http_request for list all movie`
+```
+url:localhost:8000/movie/
+method:GET
+```
+
 `http_request for fetching movie detail`
+```
+url:localhost:8000/movie/4/
+method:GET
+```
 `http_request for update movie`
+```
+url:localhost:8000/movie/4/
+method:PUT
+body:{
+"title":"Athiradi",
+"year":2026,
+"language":"malayalam",
+"run_time":160
+}
+```
+
 `http_request for delete movie`
+```
+url:localhost:8000/movie/
+method:DELETE
+```
+
+### HOSPITAL REGISTER MANAGEMENT TASK
+```
+id   patient_name  phone_no    assigned_doc      consultation_fee
+
+
+1          cassie   9746756743      jude           160
+2          michael  8757389874      cardan         200
+3          sloane   7467393746      sam            800
+4          lia      9837647374      rowan          450
+5          dan      8736541537      aelin          180
+
+```
+`http_request for adding new patient`
+```
+url:localhost:8000/patient/
+method:POST
+body:{
+    "patient_name":"celena",
+    "phone_no":7635268289,
+    "assigned_doc":"sam",
+    "consulatation_fee":240
+}
+```
+`http_request for list all patient`
+```
+url:localhost:8000/patient/
+method:GET
+```
+
+`http_request for fetching patient detail`
+```
+url:localhost:8000/patient/2
+method:GET
+```
+
+`http_request for update patient`
+```
+url:localhost:8000/patient/5
+method:PUT
+body:{
+    "patient_name":"dan",
+    "phone_no":7985268289,
+    "assigned_doc":"sam",
+    "consulatation_fee":240
+}
+```
+`http_request for delete patient`
+```
+url:localhost:8000/patient/5
+method:DELETE
+```
